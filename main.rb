@@ -1,12 +1,9 @@
 require_relative 'lib/intro'
+require_relative 'lib/game'
 
-class Game
-  include Intro
+def play_game
+  game = Game.new
+  game.start
+end 
 
-  def start
-    intro_message
-  end
-end
-
-game = Game.new
-game.start
+play_game
