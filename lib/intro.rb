@@ -28,11 +28,11 @@ module Intro
     puts "LET'S PLAY!"
     print "Player 1 enter your name: "
     name1 = gets.chomp
-    player1 = Player.new(name1)
+    @player1 = Player.new(name1)
     puts "Hello, #{name1}!"
     print "Player 2 enter your name: "
     name2 = gets.chomp
-    player2 = Player.new(name2)
+    @player2 = Player.new(name2)
     puts "Hey, #{name2}!"
     puts "*********************************************************************************************"
   end
