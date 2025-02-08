@@ -1,7 +1,7 @@
 class Game
   include Intro
 
-  def start
+  def intro
     intro_message
   end
 end

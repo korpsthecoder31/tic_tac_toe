@@ -1,9 +1,9 @@
 require_relative 'lib/intro'
 require_relative 'lib/game'
 
-def play_game
+def run_tic_tac_toe
   game = Game.new
-  game.start
+  game.intro
 end 
 
-play_game
+run_tic_tac_toe
