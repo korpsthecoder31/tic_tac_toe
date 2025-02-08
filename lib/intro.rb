@@ -1,5 +1,7 @@
 require 'rubocop'
 
+require_relative 'player'
+
 module Intro
   def intro_message
     puts "WELCOME TO TIC-TAC-TOE!"
@@ -13,7 +15,7 @@ module Intro
     print "Player Choice: "
     ready = gets.chomp
     if ready == "Y"
-      ready_to_play
+      get_player_credentials
     else 
       puts "*********************************************************************************************"
       puts "I guess not. See you next time. Goodbye!"
@@ -21,9 +23,18 @@ module Intro
     end  
   end
 
-  def ready_to_play
+  def get_player_credentials
     puts "*********************************************************************************************"
     puts "LET'S PLAY!"
+    print "Player 1 enter your name: "
+    name1 = gets.chomp
+    player1 = Player.new(name1)
+    puts "Hello, #{name1}!"
+    print "Player 2 enter your name: "
+    name2 = gets.chomp
+    player2 = Player.new(name2)
+    puts "Hey, #{name2}!"
+    puts "*********************************************************************************************"
   end
 
 end
