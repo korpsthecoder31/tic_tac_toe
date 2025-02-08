@@ -1,4 +1,6 @@
-class Game
+require_relative 'board'
+
+class Game < Board
   include Intro
 
   def intro
