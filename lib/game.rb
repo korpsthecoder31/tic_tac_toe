@@ -20,6 +20,7 @@ class Game < Board
     loop do
       display_board
       get_player_choice
+      switch_player
     end
   end
 
@@ -27,5 +28,10 @@ class Game < Board
     print "#{@current_player.name}, please select a tile: "
     tile = gets.chomp
     update_board(tile, @current_player.symbol)
+  end
+
+  def switch_player
+    @players = [@player1, @player2]
+    @current_player = @players.rotate!.first
   end
 end
