@@ -31,7 +31,6 @@ class Game < Board
   end
 
   def switch_player
-    @players = [@player1, @player2]
-    @current_player = @players.rotate!.first
+    @current_player = @current_player == @player1 ? @player2 : @player1
   end
 end
