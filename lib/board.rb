@@ -1,18 +1,22 @@
 class Board
-  attr_reader
+  attr_accessor
+
   def initialize
-    @A1 = "test"
-    @A2 = ""
-    @A3 = ""
-    @B1 = ""
-    @B2 = ""
-    @B3 = ""
-    @C1 = ""
-    @C2 = ""
-    @C3 = ""
+    @A1 = ""
+    @A2 = "X"
+    @A3 = "O"
+    @B1 = "X"
+    @B2 = "O"
+    @B3 = "X"
+    @C1 = "O"
+    @C2 = "X"
+    @C3 = "O"
   end
 
   def display_board
-    puts "#{@A1}"
+    puts "Current Board:"
+    puts "| #{@A1} | #{@A2} | #{@A3} |"
+    puts "| #{@B1} | #{@B2} | #{@B3} |"
+    puts "| #{@C1} | #{@C2} | #{@C3} |"
   end
 end
