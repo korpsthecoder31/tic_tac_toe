@@ -1,7 +1,5 @@
 require 'rubocop'
 
-require_relative 'player'
-
 module Intro
   def intro_message
     puts "WELCOME TO TIC-TAC-TOE!"
@@ -12,7 +10,7 @@ module Intro
     puts "Numbers are assigned starting from the top row, going left to right, before moving on below."
     puts "Which means 1 is the upper left square, 5 is the middle square, 9 bottom left, etc."
     puts "Simple. Ready to play? [Enter 'Y' to play]"
-    print "Player Choice: "
+    print ": "
     ready = gets.chomp
     if ready == "Y"
       get_player_credentials
@@ -36,5 +34,4 @@ module Intro
     puts "Hey, #{name2}!"
     puts "*********************************************************************************************"
   end
-
 end

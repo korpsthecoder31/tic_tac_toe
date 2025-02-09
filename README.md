@@ -9,9 +9,9 @@ Pseudocode:
 Display intro message - ok
 Take Player 1 credentials - ok
 Take Player 2 credentials - ok
-Show Board
-Take Player 1 move
-  Update Board
+Show Board - ok
+Take Player 1 move - ok
+  Update Board - ok
   #Check Winner
   If yes proceed to Winning message
 Take Player 2 move
