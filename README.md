@@ -3,6 +3,7 @@ ODIN PROJECT
 Project Name: Tic-Tac-Toe
 
 Start Date: 7 February 2025
+End Date: 11 Fenruary 2025
 
 Pseudocode:
 
@@ -20,5 +21,5 @@ Play Game - pending
 If winner display winning message - ok
 
 Disable overwrite choice - ok
-Ask choice again if invalid choice - pending
+Ask choice again if invalid choice - ok
 Restart game option once game ends - ok
