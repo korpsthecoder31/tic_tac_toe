@@ -28,9 +28,17 @@ class Game < Board
   end
 
   def get_player_choice
-    print "#{@current_player.name}, please select a tile: "
-    tile = gets.chomp
-    update_board(tile, @current_player.symbol)
+    print "#{@current_player.name}, please select a square: "
+    tile = gets.chomp.to_i
+    if @used_tiles.include?(tile)
+      puts "Square has already been selected. Please try again."
+      get_player_choice
+    else
+      @used_tiles << tile
+      @current_player.tiles << tile
+      update_board(tile, @current_player.symbol)
+    end
+    check_winner
   end
 
   def check_winner
