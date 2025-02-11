@@ -9,6 +9,7 @@ class Game < Board
     @player1 = nil
     @player2 = nil
     @current_player = nil
+    @winner = false
   end
   
   def intro
@@ -28,6 +29,11 @@ class Game < Board
     print "#{@current_player.name}, please select a tile: "
     tile = gets.chomp
     update_board(tile, @current_player.symbol)
+  end
+
+  def check_winner
+    winning_combinations = [[1, 2 ,3], [4, 5, 6], [7, 8, 9], [1, 4, 7], [2, 5, 8], [3, 6, 9], [1, 5, 9], [3, 5, 7]]
+    winning_combinations.each { |combination| @winner = true if (combination - @current_player.tiles).empty?}
   end
 
   def switch_player
