@@ -30,7 +30,10 @@ class Game < Board
   def get_player_choice
     print "#{@current_player.name}, please select a square: "
     tile = gets.chomp.to_i
-    if @used_tiles.include?(tile)
+    if !(1..9).cover?(tile)
+      puts "Invalid choice. Please try again."
+      get_player_choice
+    elsif @used_tiles.include?(tile)
       puts "Square has already been selected. Please try again."
       get_player_choice
     else
