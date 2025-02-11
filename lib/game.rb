@@ -58,4 +58,20 @@ class Game < Board
       puts "Tie game! No more squares available."
     end
   end
+
+  def clear_board
+    @A1 = " "
+    @A2 = " "
+    @A3 = " "
+    @B1 = " "
+    @B2 = " "
+    @B3 = " "
+    @C1 = " "
+    @C2 = " "
+    @C3 = " "
+    @used_tiles = []
+    @player1.tiles = []
+    @player2.tiles = []
+    @winner = false
+  end
 end
