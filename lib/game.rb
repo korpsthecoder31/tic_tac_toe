@@ -14,15 +14,17 @@ class Game < Board
   
   def intro
     intro_message
-    @current_player = @player1
   end
 
   def play_game
+    @current_player = @player1
     loop do
       display_board
       get_player_choice
+      break if @winner == true || @used_tiles.size == 9
       switch_player
     end
+    puts "game over"
   end
 
   def get_player_choice
