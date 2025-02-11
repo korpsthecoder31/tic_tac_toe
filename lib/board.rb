@@ -21,23 +21,23 @@ class Board
 
   def update_board(tile, symbol)
     case tile
-    when "1"
+    when 1
       @A1 = symbol
-    when "2"
+    when 2
       @A2 = symbol
-    when "3"
+    when 3
       @A3 = symbol
-    when "4"
+    when 4
       @B1 = symbol
-    when "5"
+    when 5
       @B2 = symbol
-    when "6"
+    when 6
       @B3 = symbol
-    when "7"
+    when 7
       @C1 = symbol
-    when "8"
+    when 8
       @C2 = symbol
-    when "9"
+    when 9
       @C3 = symbol
     end
   end

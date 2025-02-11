@@ -1,8 +1,9 @@
 class Player
-  attr_reader :name, :symbol
+  attr_accessor :name, :symbol, :tiles
 
   def initialize(name, symbol)
     @name = name
     @symbol = symbol
+    @tiles = []
   end
 end
