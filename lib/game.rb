@@ -41,4 +41,13 @@ class Game < Board
   def switch_player
     @current_player = @current_player == @player1 ? @player2 : @player1
   end
+
+  def game_over
+    display_board
+    if @winner == true
+      puts "Congratulations, #{@current_player.name}. You win!"
+    else
+      puts "Tie game! No more squares available."
+    end
+  end
 end
