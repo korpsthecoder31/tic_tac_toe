@@ -14,11 +14,11 @@ Play Game - pending
   Show board - ok
   Take player choice - ok
   Display update board - ok
-  Check winner - pending
+  Check winner - ok
   Switch player - ok
 
-If winner display winning message - pending
+If winner display winning message - ok
 
-Disable overwrite choice - pending
+Disable overwrite choice - ok
 Ask choice again if invalid choice - pending
-Restart game option once game ends - pending
+Restart game option once game ends - ok
