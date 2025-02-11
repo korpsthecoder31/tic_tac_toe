@@ -9,6 +9,7 @@ class Board
     @C1 = " "
     @C2 = " "
     @C3 = " "
+    @used_tiles = []
   end
 
   def display_board
