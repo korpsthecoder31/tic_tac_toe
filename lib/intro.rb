@@ -6,12 +6,12 @@ module Intro
     puts "A two player game created by M. Korps."
     puts "The rules are simple."
     puts "Players 1 and 2 takes turns adding O's and X's respectively."
-    puts "They do that by entering numbers 1 through 9, each corresponding to a section of the board."
+    puts "They do that by entering numbers 1 through 9, each corresponding to a square of the board."
     puts "Numbers are assigned starting from the top row, going left to right, before moving on below."
     puts "Which means 1 is the upper left square, 5 is the middle square, 9 bottom left, etc."
     puts "Simple. Ready to play? [Enter 'Y' to play]"
     print ": "
-    ready = gets.chomp
+    ready = gets.chomp.upcase
     if ready == "Y"
       get_player_credentials
     else 
