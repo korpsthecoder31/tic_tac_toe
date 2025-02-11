@@ -24,7 +24,7 @@ class Game < Board
       break if @winner == true || @used_tiles.size == 9
       switch_player
     end
-    puts "game over"
+    game_over
   end
 
   def get_player_choice
